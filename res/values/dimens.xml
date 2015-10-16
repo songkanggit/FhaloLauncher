@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="toolbar_external_icon_height">36dp</dimen>
+    <integer name="apps_customize_maxCellCountX">-1</integer>
+</resources>
