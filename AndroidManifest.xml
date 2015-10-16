@@ -8,10 +8,25 @@
         android:targetSdkVersion="18" />
 
     <application
+        android:name="FhaloLauncher"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="@bool/config_hardware_acclerate"
+        android:largeHeap="@bool/config_largeHeap" >
+        <activity
+            android:name="com.fhalo.activities.MainActivity"
+            android:screenOrientation="nosensor"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
