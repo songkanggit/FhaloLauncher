@@ -5,5 +5,63 @@
     android:background="@color/wall_paper_background"
     android:orientation="vertical" >
     
+    <TableLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+        <TableRow 
+        	android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:gravity="center">"
+                <Button android:id="@+id/vibrator_test_button"
+                    style="android:attr/borderlessButtonStyle"
+			        android:layout_width="@dimen/pretest_main_button_width"
+			        android:layout_height="wrap_content"
+			        android:text="@string/vibrator_test_button"
+			        android:textAlignment="center" />
+    
+			    <Button android:id="@+id/led_test_button"
+			        style="android:attr/borderlessButtonStyle"
+			        android:layout_width="@dimen/pretest_main_button_width"
+			        android:layout_height="wrap_content"
+			        android:text="@string/led_test_button"
+			        android:textAlignment="center" />
+        </TableRow>
+        <TableRow 
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:gravity="center">
+                <Button android:id="@+id/gsensor_test_button"
+                    style="android:attr/borderlessButtonStyle"
+			        android:layout_width="@dimen/pretest_main_button_width"
+			        android:layout_height="wrap_content"
+			        android:text="@string/gsensor_test_button"
+			        android:textAlignment="center" />
+			    
+			    <Button android:id="@+id/key_test_button"
+			        style="android:attr/borderlessButtonStyle"
+			        android:layout_width="@dimen/pretest_main_button_width"
+			        android:layout_height="wrap_content"
+			        android:text="@string/key_test_button"
+			        android:textAlignment="center" />
+        </TableRow>
+        <TableRow 
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:gravity="center">
+                <Button android:id="@+id/touchscreen_test_button"
+                    style="android:attr/borderlessButtonStyle"
+			        android:layout_width="@dimen/pretest_main_button_width"
+			        android:layout_height="wrap_content"
+			        android:text="@string/touchscreen_test_button"
+			        android:textAlignment="center" />
+			    
+			    <Button android:id="@+id/net_test_button"
+			        style="android:attr/borderlessButtonStyle"
+			        android:layout_width="@dimen/pretest_main_button_width"
+			        android:layout_height="wrap_content"
+			        android:text="@string/net_test_button"
+			        android:textAlignment="center" />
+        </TableRow>
 
+    </TableLayout>
 </LinearLayout>
